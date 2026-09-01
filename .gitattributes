@@ -1,0 +1,24 @@
+# 统一换行符：文本文件入库用 LF，检出时 Windows 自动转 CRLF
+* text=auto eol=crlf
+
+# 以下文件必须用 LF（Dart/Gradle/Shell 工具在 Windows 下对 CRLF 处理不完善）
+*.dart        text eol=lf
+*.kt          text eol=lf
+*.gradle      text eol=lf
+*.gradle.kts  text eol=lf
+*.java        text eol=lf
+*.xml         text eol=lf
+*.yaml        text eol=lf
+*.yml         text eol=lf
+*.json        text eol=lf
+*.md          text eol=lf
+*.txt         text eol=lf
+*.properties  text eol=lf
+*.sh          text eol=lf
+gradlew       text eol=lf
+
+# 二进制
+*.png   binary
+*.ttf   binary
+*.jar   binary
+*.apk   binary
