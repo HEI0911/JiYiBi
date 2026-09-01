@@ -14,15 +14,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Flutter 3.29.0 需要 JDK 17
+      # Android 构建需要 JDK 17
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: '17'
 
+      # 拉取 Flutter 最新稳定版（和本地开发环境保持一致）
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: 'latest'
           channel: stable
           cache: true
 
